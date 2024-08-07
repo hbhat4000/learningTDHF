@@ -1,0 +1,79 @@
+OS                           : Linux-5.14.21-150400.24.81_12.0.87-cray_shasta_c-x86_64-with-glibc2.31
+Python Version               : 3.9.15
+CuPy Version                 : 13.0.0
+CuPy Platform                : NVIDIA CUDA
+NumPy Version                : 1.23.5
+SciPy Version                : 1.9.3
+Cython Build Version         : 0.29.36
+Cython Runtime Version       : None
+CUDA Root                    : /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2
+nvcc PATH                    : /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/bin/nvcc
+CUDA Build Version           : 12020
+CUDA Driver Version          : 12020
+CUDA Runtime Version         : 12020 (linked to CuPy) / 12020 (locally installed)
+cuBLAS Version               : (available)
+cuFFT Version                : 11008
+cuRAND Version               : 10303
+cuSOLVER Version             : (11, 5, 0)
+cuSPARSE Version             : (available)
+NVRTC Version                : (12, 2)
+Thrust Version               : 200200
+CUB Build Version            : 200200
+Jitify Build Version         : <unknown>
+cuDNN Build Version          : 8801
+cuDNN Version                : 8903
+NCCL Build Version           : None
+NCCL Runtime Version         : None
+cuTENSOR Version             : None
+cuSPARSELt Build Version     : None
+Device 0 Name                : NVIDIA A100-SXM4-40GB
+Device 0 Compute Capability  : 80
+Device 0 PCI Bus ID          : 0000:03:00.0
+None
+nprime = 10
+npripri = 6
+Sizes of ptrain and pdot:
+[(80000, 4, 4), (80000, 4, 4)]
+Loss at truetheta:
+1.5711580088722435e-19
+len(theta) = 256
+len(jac) = 1280000
+ 
+LSMR            Least-squares solution of  Ax = b
+
+The matrix A has 2560000 rows and 256 columns
+damp = 0.00000000000000e+00
+
+atol = 1.00e-08                 conlim = 1.00e+08
+
+btol = 1.00e-08             maxiter =   100000
+
+ 
+   itn      x(1)       norm r    norm Ar  compatible   LS      norm A   cond A
+     0  0.00000e+00  1.586e+02  3.576e+04   1.0e+00  1.4e+00
+     1  4.21833e-02  7.100e+01  1.115e+04   4.5e-01  6.3e-01  2.5e+02  1.0e+00
+     2  8.99257e-02  4.164e+01  4.621e+03   2.6e-01  3.3e-01  3.4e+02  1.3e+00
+     3  1.19263e-01  3.305e+01  2.519e+03   2.1e-01  1.9e-01  4.0e+02  1.4e+00
+     4  1.48247e-01  2.687e+01  1.419e+03   1.7e-01  1.2e-01  4.5e+02  2.0e+00
+     5  1.50683e-01  2.525e+01  1.270e+03   1.6e-01  1.1e-01  4.8e+02  2.6e+00
+     6  1.49284e-01  1.648e+01  8.574e+02   1.0e-01  9.6e-02  5.4e+02  3.7e+00
+     7  1.41634e-01  9.888e+00  5.100e+02   6.2e-02  9.2e-02  5.6e+02  3.1e+00
+     8  1.40062e-01  7.618e+00  3.495e+02   4.8e-02  8.0e-02  5.8e+02  2.7e+00
+     9  1.39288e-01  6.145e+00  2.223e+02   3.9e-02  6.0e-02  6.0e+02  2.7e+00
+    10  1.37042e-01  5.367e+00  1.738e+02   3.4e-02  5.3e-02  6.1e+02  3.8e+00
+    20  9.43012e-02  5.015e-01  1.451e+01   3.2e-03  4.1e-02  7.1e+02  5.6e+00
+    30  9.07286e-02  2.794e-02  6.976e-01   1.8e-04  2.8e-02  8.8e+02  6.0e+00
+    40  9.05837e-02  3.102e-03  7.898e-02   2.0e-05  2.5e-02  1.0e+03  6.0e+00
+    50  9.05611e-02  5.514e-05  1.520e-03   3.5e-07  2.5e-02  1.1e+03  6.8e+00
+    55  9.05614e-02  1.572e-05  2.817e-04   9.9e-08  1.5e-02  1.2e+03  6.8e+00
+    56  9.05614e-02  1.234e-05  2.095e-04   7.8e-08  1.4e-02  1.2e+03  1.0e+01
+ 
+LSMR finished
+Ax - b is small enough, given atol, btol                  
+istop =       1    normr = 1.2e-05
+    normA = 1.2e+03    normAr = 2.1e-04
+itn   =      56    condA = 1.0e+01
+    normx = 1.1e+00
+    56  9.05614e-02   1.234e-05  2.095e-04
+   7.8e-08  1.4e-02   1.2e+03  1.0e+01
+loss = 1.5229340947666101e-10

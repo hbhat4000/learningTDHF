@@ -1,0 +1,88 @@
+OS                           : Linux-5.14.21-150400.24.69_12.0.74-cray_shasta_c-x86_64-with-glibc2.31
+Python Version               : 3.9.15
+CuPy Version                 : 12.1.0
+CuPy Platform                : NVIDIA CUDA
+NumPy Version                : 1.23.5
+SciPy Version                : 1.9.3
+Cython Build Version         : 0.29.32
+Cython Runtime Version       : None
+CUDA Root                    : /opt/nvidia/hpc_sdk/Linux_x86_64/22.7/cuda/11.7
+nvcc PATH                    : /opt/nvidia/hpc_sdk/Linux_x86_64/22.7/cuda/11.7/bin/nvcc
+CUDA Build Version           : 11080
+CUDA Driver Version          : 12000
+CUDA Runtime Version         : 11070
+cuBLAS Version               : (available)
+cuFFT Version                : 10702
+cuRAND Version               : 10210
+cuSOLVER Version             : (11, 3, 5)
+cuSPARSE Version             : (available)
+NVRTC Version                : (11, 7)
+Thrust Version               : 101501
+CUB Build Version            : 101501
+Jitify Build Version         : 4a37de0
+cuDNN Build Version          : 8801
+cuDNN Version                : 8302
+NCCL Build Version           : 21602
+NCCL Runtime Version         : 21505
+cuTENSOR Version             : 10500
+cuSPARSELt Build Version     : None
+Device 0 Name                : NVIDIA A100-PCIE-40GB
+Device 0 Compute Capability  : 80
+Device 0 PCI Bus ID          : 0000:C3:00.0
+None
+nprime = 10
+npripri = 6
+Sizes of ptrain and pdot:
+[(79920, 4, 4), (79920, 4, 4)]
+Loss at truetheta:
+7.679883660656387e-05
+len(theta) = 256
+len(jac) = 1278720
+ 
+LSMR            Least-squares solution of  Ax = b
+
+The matrix A has 2557440 rows and 256 columns
+damp = 0.00000000000000e+00
+
+atol = 1.00e-08                 conlim = 1.00e+08
+
+btol = 1.00e-08             maxiter =    20000
+
+ 
+   itn      x(1)       norm r    norm Ar  compatible   LS      norm A   cond A
+     0  0.00000e+00  8.450e+01  1.242e+04   1.0e+00  1.7e+00
+     1  4.85574e-02  3.617e+01  3.120e+03   4.3e-01  5.3e-01  1.6e+02  1.0e+00
+     2  8.51529e-02  2.568e+01  1.712e+03   3.0e-01  3.2e-01  2.1e+02  1.4e+00
+     3  1.20292e-01  1.683e+01  8.386e+02   2.0e-01  2.0e-01  2.5e+02  1.8e+00
+     4  1.19669e-01  1.296e+01  5.873e+02   1.5e-01  1.7e-01  2.7e+02  2.3e+00
+     5  1.16783e-01  1.006e+01  3.883e+02   1.2e-01  1.3e-01  3.0e+02  1.9e+00
+     6  1.17774e-01  8.324e+00  2.791e+02   9.9e-02  1.0e-01  3.3e+02  2.3e+00
+     7  1.20751e-01  7.200e+00  2.178e+02   8.5e-02  8.6e-02  3.5e+02  2.4e+00
+     8  1.25914e-01  5.747e+00  1.569e+02   6.8e-02  7.3e-02  3.7e+02  3.0e+00
+     9  1.27909e-01  5.180e+00  1.332e+02   6.1e-02  6.6e-02  3.9e+02  2.6e+00
+    10  1.31351e-01  3.913e+00  9.589e+01   4.6e-02  6.0e-02  4.1e+02  3.8e+00
+    20  1.44442e-01  1.387e+00  1.639e+01   1.6e-02  2.2e-02  5.5e+02  4.9e+00
+    30  1.43695e-01  3.412e-01  3.135e+00   4.0e-03  1.5e-02  6.1e+02  7.8e+00
+    40  1.44314e-01  5.329e-02  6.687e-01   6.3e-04  1.8e-02  6.9e+02  4.8e+00
+    50  1.44435e-01  1.738e-02  1.562e-01   2.1e-04  1.2e-02  7.8e+02  5.1e+00
+    60  1.44479e-01  1.024e-02  4.933e-02   1.2e-04  5.7e-03  8.4e+02  6.4e+00
+    70  1.44483e-01  8.626e-03  1.056e-02   1.0e-04  1.4e-03  8.9e+02  5.8e+00
+    80  1.44484e-01  8.588e-03  2.651e-03   1.0e-04  3.2e-04  9.6e+02  5.1e+00
+    90  1.44484e-01  8.586e-03  4.710e-04   1.0e-04  5.4e-05  1.0e+03  7.2e+00
+   100  1.44484e-01  8.585e-03  8.199e-05   1.0e-04  9.0e-06  1.1e+03  7.2e+00
+   110  1.44484e-01  8.585e-03  2.495e-05   1.0e-04  2.6e-06  1.1e+03  6.2e+00
+ 
+   itn      x(1)       norm r    norm Ar  compatible   LS      norm A   cond A
+   120  1.44484e-01  8.585e-03  1.455e-06   1.0e-04  1.5e-07  1.2e+03  6.3e+00
+   130  1.44484e-01  8.585e-03  2.241e-07   1.0e-04  2.1e-08  1.2e+03  6.3e+00
+   133  1.44484e-01  8.585e-03  9.598e-08   1.0e-04  9.1e-09  1.2e+03  6.3e+00
+ 
+LSMR finished
+The least-squares solution is good enough, given atol     
+istop =       2    normr = 8.6e-03
+    normA = 1.2e+03    normAr = 9.6e-08
+itn   =     133    condA = 6.3e+00
+    normx = 8.9e-01
+   133  1.44484e-01   8.585e-03  9.598e-08
+   1.0e-04  9.1e-09   1.2e+03  6.3e+00
+loss = 7.370875592596736e-05
