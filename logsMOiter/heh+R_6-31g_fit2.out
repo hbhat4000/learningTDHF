@@ -1,0 +1,81 @@
+OS                           : Linux-5.14.21-150400.24.81_12.0.87-cray_shasta_c-x86_64-with-glibc2.31
+Python Version               : 3.9.19
+CuPy Version                 : 13.0.0
+CuPy Platform                : NVIDIA CUDA
+NumPy Version                : 1.26.4
+SciPy Version                : 1.13.0
+Cython Build Version         : 0.29.36
+Cython Runtime Version       : None
+CUDA Root                    : /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2
+nvcc PATH                    : /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/bin/nvcc
+CUDA Build Version           : 12020
+CUDA Driver Version          : 12020
+CUDA Runtime Version         : 12020 (linked to CuPy) / 12020 (locally installed)
+cuBLAS Version               : (available)
+cuFFT Version                : 11008
+cuRAND Version               : 10303
+cuSOLVER Version             : (11, 5, 0)
+cuSPARSE Version             : (available)
+NVRTC Version                : (12, 2)
+Thrust Version               : 200200
+CUB Build Version            : 200200
+Jitify Build Version         : <unknown>
+cuDNN Build Version          : 8801
+cuDNN Version                : 8903
+NCCL Build Version           : None
+NCCL Runtime Version         : None
+cuTENSOR Version             : None
+cuSPARSELt Build Version     : None
+Device 0 Name                : NVIDIA A100-SXM4-40GB
+Device 0 Compute Capability  : 80
+Device 0 PCI Bus ID          : 0000:82:00.0
+None
+Sizes of ptrain and pdot:
+[(80000, 4, 4), (80000, 4, 4)]
+Loss at truetheta:
+1.5711882703135678e-19
+len(theta) = 55
+len(jac) = 1280000
+ 
+LSMR            Least-squares solution of  Ax = b
+
+The matrix A has 2560000 rows and 55 columns
+damp = 0.00000000000000e+00
+
+atol = 1.00e-16                 conlim = 1.00e+08
+
+btol = 1.00e-16             maxiter =   200000
+
+ 
+   itn      x(1)       norm r    norm Ar  compatible   LS      norm A   cond A
+     0  0.00000e+00  1.586e+02  4.904e+04   1.0e+00  1.9e+00
+     1 -2.51801e-02  5.880e+01  1.142e+04   3.7e-01  5.8e-01  3.3e+02  1.0e+00
+     2 -5.41422e-02  3.279e+01  3.595e+03   2.1e-01  2.6e-01  4.2e+02  1.4e+00
+     3 -5.90418e-02  2.909e+01  2.443e+03   1.8e-01  1.7e-01  4.9e+02  1.6e+00
+     4 -6.40044e-02  2.465e+01  1.845e+03   1.6e-01  1.3e-01  5.6e+02  2.4e+00
+     5 -7.31737e-02  1.861e+01  1.303e+03   1.2e-01  1.1e-01  6.1e+02  2.8e+00
+     6 -8.20851e-02  1.488e+01  9.195e+02   9.4e-02  9.4e-02  6.6e+02  2.3e+00
+     7 -8.72746e-02  1.325e+01  7.321e+02   8.4e-02  7.8e-02  7.1e+02  2.2e+00
+     8 -9.63965e-02  1.085e+01  5.220e+02   6.8e-02  6.3e-02  7.6e+02  3.2e+00
+     9 -1.03423e-01  9.609e+00  4.287e+02   6.1e-02  5.7e-02  7.8e+02  3.4e+00
+    10 -1.09529e-01  8.678e+00  3.709e+02   5.5e-02  5.3e-02  8.1e+02  3.3e+00
+    20 -1.74995e-01  1.637e+00  7.055e+01   1.0e-02  3.9e-02  1.1e+03  4.6e+00
+    30 -1.85378e-01  8.785e-02  2.405e+00   5.5e-04  2.2e-02  1.2e+03  3.8e+00
+    40 -1.84457e-01  2.460e-03  9.245e-02   1.6e-05  2.6e-02  1.4e+03  6.4e+00
+    50 -1.84514e-01  2.597e-06  1.596e-04   1.6e-08  3.8e-02  1.6e+03  5.9e+00
+    60 -1.84514e-01  2.667e-09  1.869e-07   1.7e-11  4.0e-02  1.7e+03  5.9e+00
+    70 -1.84514e-01  3.938e-10  1.325e-09   2.5e-12  1.8e-03  1.9e+03  5.9e+00
+    80 -1.84514e-01  3.934e-10  4.261e-12   2.5e-12  5.4e-06  2.0e+03  5.9e+00
+    90 -1.84514e-01  3.934e-10  3.137e-18   2.5e-12  3.7e-12  2.2e+03  6.0e+00
+   100 -1.84514e-01  3.934e-10  7.829e-21   2.5e-12  8.7e-15  2.3e+03  6.0e+00
+   104 -1.84514e-01  3.934e-10  7.357e-23   2.5e-12  8.0e-17  2.3e+03  7.1e+00
+ 
+LSMR finished
+The least-squares solution is good enough, given atol     
+istop =       2    normr = 3.9e-10
+    normA = 2.3e+03    normAr = 7.4e-23
+itn   =     104    condA = 7.1e+00
+    normx = 7.8e-01
+   104 -1.84514e-01   3.934e-10  7.357e-23
+   2.5e-12  8.0e-17   2.3e+03  7.1e+00
+loss = 1.5477786935167248e-19

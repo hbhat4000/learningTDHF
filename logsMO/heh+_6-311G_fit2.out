@@ -1,0 +1,40 @@
+OS                           : Linux-5.14.21-150400.24.81_12.0.87-cray_shasta_c-x86_64-with-glibc2.31
+Python Version               : 3.9.15
+CuPy Version                 : 13.0.0
+CuPy Platform                : NVIDIA CUDA
+NumPy Version                : 1.23.5
+SciPy Version                : 1.9.3
+Cython Build Version         : 0.29.36
+Cython Runtime Version       : None
+CUDA Root                    : /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2
+nvcc PATH                    : /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/bin/nvcc
+CUDA Build Version           : 12020
+CUDA Driver Version          : 12020
+CUDA Runtime Version         : 12020 (linked to CuPy) / 12020 (locally installed)
+cuBLAS Version               : (available)
+cuFFT Version                : 11008
+cuRAND Version               : 10303
+cuSOLVER Version             : (11, 5, 0)
+cuSPARSE Version             : (available)
+NVRTC Version                : (12, 2)
+Thrust Version               : 200200
+CUB Build Version            : 200200
+Jitify Build Version         : <unknown>
+cuDNN Build Version          : 8801
+cuDNN Version                : 8903
+NCCL Build Version           : None
+NCCL Runtime Version         : None
+cuTENSOR Version             : None
+cuSPARSELt Build Version     : None
+Device 0 Name                : NVIDIA A100-SXM4-80GB
+Device 0 Compute Capability  : 80
+Device 0 PCI Bus ID          : 0000:03:00.0
+None
+./trajdata100/train_heh+_6-311G.npy
+Sizes of ptrain and pdot:
+[(199996, 14, 14), (199996, 14, 14)]
+Loss at truetheta:
+8.31775890185382e-19
+len(theta) = 5565
+len(jac) = 39199216
+loss = 5.637663751398806e-06
